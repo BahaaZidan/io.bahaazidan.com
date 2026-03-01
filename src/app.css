@@ -1,16 +1,7 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 @plugin "daisyui" {
-	themes: business;
-}
-@plugin "daisyui/theme" {
-	name: 'business';
-	color-scheme: 'dark';
-	--radius-selector: 1rem;
-	--radius-field: 1rem;
-	--radius-box: 1rem;
-	--size-selector: 0.25rem;
-	--size-field: 0.25rem;
+	themes: black;
 }
 
 :root {
@@ -24,7 +15,7 @@ body {
 }
 
 .prose {
-	@apply max-w-4xl !leading-7 sm:text-lg sm:!leading-9 md:text-xl;
+	@apply max-w-4xl leading-7! sm:text-lg sm:leading-9! md:text-xl;
 
 	h1 {
 		font-weight: 700;
@@ -61,11 +52,11 @@ body {
 	}
 
 	pre {
-		@apply rounded-lg !px-0;
+		@apply rounded-lg px-0!;
 	}
 
 	code {
-		@apply text-sm !leading-loose md:text-base;
+		@apply text-sm leading-loose! md:text-base;
 	}
 
 	pre > code {
@@ -115,19 +106,19 @@ body {
 	}
 
 	[data-chars-id] span {
-		@apply !text-inherit;
+		@apply text-inherit!;
 	}
 
 	[data-chars-id='v'] {
-		@apply border-b-pink-600 bg-rose-800/50 font-bold !text-pink-300;
+		@apply border-b-pink-600 bg-rose-800/50 font-bold text-pink-300!;
 	}
 
 	[data-chars-id='s'] {
-		@apply border-b-yellow-600 bg-yellow-800/50 font-bold !text-yellow-300;
+		@apply border-b-yellow-600 bg-yellow-800/50 font-bold text-yellow-300!;
 	}
 
 	[data-chars-id='i'] {
-		@apply border-b-purple-600 bg-purple-800/50 font-bold !text-purple-200;
+		@apply border-b-purple-600 bg-purple-800/50 font-bold text-purple-200!;
 	}
 
 	[data-rehype-pretty-code-title] {
@@ -135,7 +126,7 @@ body {
 	}
 
 	figcaption + pre {
-		@apply !rounded-t-none;
+		@apply rounded-t-none!;
 	}
 
 	figure {
