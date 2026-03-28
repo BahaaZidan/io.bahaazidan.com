@@ -70,7 +70,7 @@
 				<BrandIcon icon={siX} class={iconClass} />
 			</a>
 			<a
-				href="https://bsky.app/profile/gebna.gg"
+				href="https://bsky.app/profile/bahaazidan.com"
 				target="_blank"
 				rel="nofollow"
 				aria-label="Bluesky"
