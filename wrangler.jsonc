@@ -17,10 +17,6 @@
 	},
 	"routes": [
 		{
-			"pattern": "gebna.gg",
-			"custom_domain": true
-		},
-		{
 			"pattern": "io.bahaazidan.com",
 			"custom_domain": true
 		}
