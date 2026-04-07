@@ -79,7 +79,7 @@
 		<div data-pagefind-ignore class="not-prose flex w-full flex-col gap-2">
 			<p>
 				{ctaText}
-				<a class="link" href="mailto:main@bahaazidan.com">{ctaLink}</a>
+				<a class="link" href="mailto:io@bahaazidan.com">{ctaLink}</a>
 			</p>
 			<div class="dropdown dropdown-top">
 				<div tabindex="0" role="button" class="btn btn-primary">

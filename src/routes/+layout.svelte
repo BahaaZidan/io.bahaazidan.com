@@ -42,7 +42,7 @@
 				<RssIcon class={iconClass} />
 			</a>
 			<a
-				href="mailto:main@bahaazidan.com"
+				href="mailto:io@bahaazidan.com"
 				aria-label="Email"
 				data-umami-event="Follow"
 				data-umami-event-target="Email"
