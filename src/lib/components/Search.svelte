@@ -75,7 +75,7 @@
 				<div>loading...</div>
 			{:then results}
 				{#each results as result (result.url)}
-					<div class="flex flex-col gap-1 rounded-lg bg-base-300 p-4">
+					<div class="flex flex-col gap-1 bg-base-300 p-4">
 						<a
 							data-sveltekit-reload
 							href={result.url.replace('.html', '')}
