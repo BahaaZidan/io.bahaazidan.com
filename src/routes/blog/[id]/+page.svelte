@@ -1,12 +1,16 @@
 <script lang="ts">
-	import LinkIcon from '@lucide/svelte/icons/link';
-	import LinkedinIcon from '@lucide/svelte/icons/linkedin';
-	import ShareIcon from '@lucide/svelte/icons/share';
-	import { siBluesky, siReddit, siX, siYcombinator } from 'simple-icons';
+	import {
+		ExportIcon,
+		LinkedinLogoIcon,
+		LinkSimpleIcon,
+		RedditLogoIcon,
+		SquareIcon,
+		XLogoIcon,
+	} from 'phosphor-svelte';
 
 	import { resolve } from '$app/paths';
 
-	import BrandIcon from '$lib/components/BrandIcon.svelte';
+	import BlueskyIcon from '$lib/components/BlueskyIcon.svelte';
 	import FormattedDate from '$lib/components/FormattedDate.svelte';
 	import Head from '$lib/components/Head.svelte';
 	import PostCard from '$lib/components/PostCard.svelte';
@@ -83,7 +87,7 @@
 			</p>
 			<div class="dropdown dropdown-top">
 				<div tabindex="0" role="button" class="btn btn-primary">
-					<ShareIcon /> Share
+					<ExportIcon /> Share
 				</div>
 
 				<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
@@ -101,7 +105,7 @@
 							data-umami-event="Share"
 							data-umami-event-target="Copy Link"
 						>
-							<LinkIcon />
+							<LinkSimpleIcon />
 							Copy Link
 						</button>
 					</li>
@@ -114,7 +118,7 @@
 							data-umami-event="Share"
 							data-umami-event-target="Reddit"
 						>
-							<BrandIcon icon={siReddit} />
+							<RedditLogoIcon />
 							Reddit
 						</a>
 					</li>
@@ -126,7 +130,30 @@
 							data-umami-event="Share"
 							data-umami-event-target="Hacker News"
 						>
-							<BrandIcon icon={siYcombinator} />
+							<script lang="ts">
+								import SquareIcon from 'phosphor-svelte/lib/Square';
+							</script>
+
+							<SquareIcon weight="fill" color="transparent">
+								<path
+									d="M0 256V0h256v256H0z
+										M74.144 62.827
+										l43.861 82.186
+										v54.016
+										h16.875
+										v-53.013
+										l44.352-83.019
+										h-18.656
+										l-26.192 52.000
+										c-3.968 7.947-7.339 15.296-7.339 15.296
+										s-3.168-7.552-6.944-15.296
+										L94.064 62.827
+										h-20.020
+										z"
+									fill="currentColor"
+									fill-rule="evenodd"
+								/>
+							</SquareIcon>
 							Hacker News
 						</a>
 					</li>
@@ -138,7 +165,7 @@
 							data-umami-event="Share"
 							data-umami-event-target="Bluesky"
 						>
-							<BrandIcon icon={siBluesky} />
+							<BlueskyIcon />
 							Bluesky
 						</a>
 					</li>
@@ -150,7 +177,7 @@
 							data-umami-event="Share"
 							data-umami-event-target="Twitter"
 						>
-							<BrandIcon icon={siX} />
+							<XLogoIcon />
 							Twitter
 						</a>
 					</li>
@@ -162,7 +189,7 @@
 							data-umami-event="Share"
 							data-umami-event-target="LinkedIn"
 						>
-							<LinkedinIcon />
+							<LinkedinLogoIcon />
 							LinkedIn
 						</a>
 					</li>

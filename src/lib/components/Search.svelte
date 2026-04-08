@@ -1,6 +1,5 @@
 <script lang="ts">
-	import SearchIcon from '@lucide/svelte/icons/search';
-	import XIcon from '@lucide/svelte/icons/x';
+	import { MagnifyingGlassIcon, XIcon } from 'phosphor-svelte';
 	import { onMount } from 'svelte';
 	// TODO: figure out a way to use the types directly from pagefind. we're not using this vite-plugin anyway
 	import type { Pagefind } from 'vite-plugin-pagefind/types';
@@ -51,7 +50,7 @@
 <!-- svelte-ignore a11y_interactive_supports_focus -->
 <!-- svelte-ignore a11y_click_events_have_key_events -->
 <div class="input hover:cursor-text" role="button" onclick={showAndFocus}>
-	<SearchIcon />
+	<MagnifyingGlassIcon />
 	<div class="grow">Search</div>
 	<kbd class="kbd">/</kbd>
 </div>
