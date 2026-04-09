@@ -4,13 +4,13 @@
 		LinkedinLogoIcon,
 		LinkSimpleIcon,
 		RedditLogoIcon,
-		SquareIcon,
 		XLogoIcon,
 	} from 'phosphor-svelte';
 	import { siBluesky, siYcombinator } from 'simple-icons';
 
 	import { resolve } from '$app/paths';
 
+	import BrandIcon from '$lib/components/BrandIcon.svelte';
 	import FormattedDate from '$lib/components/FormattedDate.svelte';
 	import Head from '$lib/components/Head.svelte';
 	import PostCard from '$lib/components/PostCard.svelte';
@@ -130,11 +130,7 @@
 							data-umami-event="Share"
 							data-umami-event-target="Hacker News"
 						>
-							<SquareIcon weight="fill" color="transparent">
-								<g transform="scale(10.6666667)">
-									<path d={siYcombinator.path} fill="currentColor" />
-								</g>
-							</SquareIcon>
+							<BrandIcon icon={siYcombinator} />
 							Hacker News
 						</a>
 					</li>
@@ -146,11 +142,7 @@
 							data-umami-event="Share"
 							data-umami-event-target="Bluesky"
 						>
-							<SquareIcon weight="fill" color="transparent">
-								<g transform="scale(10.6666667)">
-									<path d={siBluesky.path} fill="currentColor" />
-								</g>
-							</SquareIcon>
+							<BrandIcon icon={siBluesky} />
 							Bluesky
 						</a>
 					</li>
