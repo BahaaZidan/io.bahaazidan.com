@@ -14,8 +14,10 @@
 
 <main class="flex flex-col items-center">
 	<div
-		class="h-150 w-full bg-[url(/bd764bb25d49a05105060185774ba14cd2c846f7.jpg)] bg-cover bg-center"
-	></div>
+		class="relative h-150 w-full bg-[url(/bd764bb25d49a05105060185774ba14cd2c846f7.jpg)] bg-cover bg-center"
+	>
+		<div class="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-base-100"></div>
+	</div>
 	<div class="relative -top-20 -mb-20 size-40 rounded-full bg-[url(/avatar.jpeg)] bg-contain"></div>
 	<div class="mx-3 my-2 flex max-w-xl flex-col gap-4">
 		<div class="text-center font-mono text-2xl font-semibold text-primary-content">Bahaa Zidan</div>
