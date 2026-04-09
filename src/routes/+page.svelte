@@ -24,7 +24,7 @@
 	</div>
 	<div class="relative -top-20 -mb-20 size-40 rounded-full bg-[url(/avatar.jpeg)] bg-contain"></div>
 	<div class="mx-3 my-2 flex max-w-xl flex-col gap-4">
-		<div class="text-center font-mono text-2xl font-semibold text-primary-content">Bahaa Zidan</div>
+		<div class="text-center font-mono text-3xl font-semibold text-primary-content">Bahaa Zidan</div>
 		<div class="text-center text-primary-content/50">App Development Consultant/Freelancer</div>
 		<div class="text-secondary-content/80">
 			<IconContext values={{ class: 'size-4.5' }}>
