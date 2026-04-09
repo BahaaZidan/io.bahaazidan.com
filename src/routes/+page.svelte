@@ -1,6 +1,10 @@
 <script lang="ts">
+	import { IconContext } from 'phosphor-svelte';
+	import { siCloudflare, siGraphql, siReact, siSvelte, siTypescript } from 'simple-icons';
+
 	import { resolve } from '$app/paths';
 
+	import BrandIcon from '$lib/components/BrandIcon.svelte';
 	import Head from '$lib/components/Head.svelte';
 	import { DEFAULT_DESCRIPTION, DEFAULT_TITLE } from '$lib/constants';
 </script>
@@ -23,9 +27,18 @@
 		<div class="text-center font-mono text-2xl font-semibold text-primary-content">Bahaa Zidan</div>
 		<div class="text-center text-primary-content/50">App Development Consultant/Freelancer</div>
 		<div class="text-secondary-content/80">
-			I build apps, open source software, teach programming, write articles, and make videos. My
-			areas of focus are: TypeScript, GraphQL, Serverless, Tooling, React Native, Svelte, and
-			Decentralization.
+			<IconContext values={{ class: 'size-4.5' }}>
+				I build apps, open source software, teach programming, write articles, and make videos. My
+				areas of focus are: <span class="badge"><BrandIcon icon={siTypescript} />TypeScript</span>
+				,
+				<span class="badge"><BrandIcon icon={siCloudflare} />Serverless</span>
+				,
+				<span class="badge"><BrandIcon icon={siGraphql} />GraphQL</span>
+				,
+				<span class="badge"><BrandIcon icon={siReact} />React Native</span>
+				, and
+				<span class="badge"><BrandIcon icon={siSvelte} />Svelte.</span>
+			</IconContext>
 		</div>
 		<div class="text-secondary-content/80">
 			I'm currently building <span class="font-mono font-bold">Kelma</span>
