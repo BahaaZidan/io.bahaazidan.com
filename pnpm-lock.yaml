@@ -101,6 +101,9 @@ importers:
       shiki:
         specifier: ^3.14.0
         version: 3.14.0
+      simple-icons:
+        specifier: ^16.15.0
+        version: 16.15.0
       svelte:
         specifier: ^5.42.2
         version: 5.42.2
@@ -2357,6 +2360,10 @@ packages:
 
   shiki@3.14.0:
     resolution: {integrity: sha512-J0yvpLI7LSig3Z3acIuDLouV5UCKQqu8qOArwMx+/yPVC3WRMgrP67beaG8F+j4xfEWE0eVC4GeBCIXeOPra1g==}
+
+  simple-icons@16.15.0:
+    resolution: {integrity: sha512-hOyY4Cdvh1D/FJa1Qx4nTvypCT2BoI3jpc4xjxVgwVh1Hmd9mnqBqBTziDytCj2f5UOAXCfdnwODiNv710aqkQ==}
+    engines: {node: '>=0.12.18'}
 
   simple-swizzle@0.2.4:
     resolution: {integrity: sha512-nAu1WFPQSMNr2Zn9PGSZK9AGn4t/y97lEm+MXTtUDwfP0ksAIX4nO+6ruD9Jwut4C49SB1Ws+fbXsm/yScWOHw==}
@@ -4853,6 +4860,8 @@ snapshots:
       '@shikijs/types': 3.14.0
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.4
+
+  simple-icons@16.15.0: {}
 
   simple-swizzle@0.2.4:
     dependencies:

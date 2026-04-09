@@ -1,9 +1,16 @@
 <script lang="ts">
-	import { EnvelopeIcon, GithubLogoIcon, IconContext, RssIcon, XLogoIcon } from 'phosphor-svelte';
+	import {
+		EnvelopeIcon,
+		GithubLogoIcon,
+		IconContext,
+		RssIcon,
+		SquareIcon,
+		XLogoIcon,
+	} from 'phosphor-svelte';
+	import { siBluesky } from 'simple-icons';
 
 	import { resolve } from '$app/paths';
 
-	import BlueskyIcon from '$lib/components/BlueskyIcon.svelte';
 	import Search from '$lib/components/Search.svelte';
 
 	let { children } = $props();
@@ -78,7 +85,11 @@
 					data-umami-event="Follow"
 					data-umami-event-target="Bluesky"
 				>
-					<BlueskyIcon />
+					<SquareIcon weight="fill" color="transparent">
+						<g transform="scale(10.6666667)">
+							<path d={siBluesky.path} fill="currentColor" />
+						</g>
+					</SquareIcon>
 				</a>
 			</IconContext>
 		</nav>

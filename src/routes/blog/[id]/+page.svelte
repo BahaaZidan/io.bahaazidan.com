@@ -7,10 +7,10 @@
 		SquareIcon,
 		XLogoIcon,
 	} from 'phosphor-svelte';
+	import { siBluesky, siYcombinator } from 'simple-icons';
 
 	import { resolve } from '$app/paths';
 
-	import BlueskyIcon from '$lib/components/BlueskyIcon.svelte';
 	import FormattedDate from '$lib/components/FormattedDate.svelte';
 	import Head from '$lib/components/Head.svelte';
 	import PostCard from '$lib/components/PostCard.svelte';
@@ -112,7 +112,7 @@
 					<div class="divider m-0"></div>
 					<li>
 						<a
-							href={`https://www.reddit.com/submit?url=${data.canonicalURL}&type=LINK&title=${data.title}`}
+							href="https://www.reddit.com/submit?url={data.canonicalURL}&type=LINK&title={data.title}"
 							target="_blank"
 							rel="noreferrer noopener"
 							data-umami-event="Share"
@@ -124,54 +124,39 @@
 					</li>
 					<li>
 						<a
-							href={`https://news.ycombinator.com/submitlink?u=${data.canonicalURL}&t=${data.title}`}
+							href="https://news.ycombinator.com/submitlink?u={data.canonicalURL}&t={data.title}"
 							target="_blank"
 							rel="noreferrer noopener"
 							data-umami-event="Share"
 							data-umami-event-target="Hacker News"
 						>
-							<script lang="ts">
-								import SquareIcon from 'phosphor-svelte/lib/Square';
-							</script>
-
 							<SquareIcon weight="fill" color="transparent">
-								<path
-									d="M0 256V0h256v256H0z
-										M74.144 62.827
-										l43.861 82.186
-										v54.016
-										h16.875
-										v-53.013
-										l44.352-83.019
-										h-18.656
-										l-26.192 52.000
-										c-3.968 7.947-7.339 15.296-7.339 15.296
-										s-3.168-7.552-6.944-15.296
-										L94.064 62.827
-										h-20.020
-										z"
-									fill="currentColor"
-									fill-rule="evenodd"
-								/>
+								<g transform="scale(10.6666667)">
+									<path d={siYcombinator.path} fill="currentColor" />
+								</g>
 							</SquareIcon>
 							Hacker News
 						</a>
 					</li>
 					<li>
 						<a
-							href={`https://bsky.app/intent/compose?text=${data.title} by @bahaazidan.com ${data.canonicalURL}`}
+							href="https://bsky.app/intent/compose?text={data.title} by @bahaazidan.com {data.canonicalURL}"
 							target="_blank"
 							rel="noreferrer noopener"
 							data-umami-event="Share"
 							data-umami-event-target="Bluesky"
 						>
-							<BlueskyIcon />
+							<SquareIcon weight="fill" color="transparent">
+								<g transform="scale(10.6666667)">
+									<path d={siBluesky.path} fill="currentColor" />
+								</g>
+							</SquareIcon>
 							Bluesky
 						</a>
 					</li>
 					<li>
 						<a
-							href={`https://twitter.com/intent/tweet?text=${data.title} by @GebnaTorky&url=${data.canonicalURL}`}
+							href="https://twitter.com/intent/tweet?text={data.title} by @GebnaTorky&url={data.canonicalURL}"
 							target="_blank"
 							rel="noreferrer noopener"
 							data-umami-event="Share"
@@ -183,7 +168,7 @@
 					</li>
 					<li>
 						<a
-							href={`https://www.linkedin.com/shareArticle?mini=true&url=${data.canonicalURL}`}
+							href="https://www.linkedin.com/shareArticle?mini=true&url={data.canonicalURL}"
 							target="_blank"
 							rel="noreferrer noopener"
 							data-umami-event="Share"
