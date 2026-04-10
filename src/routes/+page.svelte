@@ -30,19 +30,15 @@
 			<IconContext values={{ class: 'size-4.5' }}>
 				I build apps, open source software, teach programming, write articles, and make videos. My
 				areas of focus are: <span class="badge"><BrandIcon icon={siTypescript} />TypeScript</span>
-				,
 				<span class="badge"><BrandIcon icon={siCloudflare} />Serverless</span>
-				,
 				<span class="badge"><BrandIcon icon={siGraphql} />GraphQL</span>
-				,
 				<span class="badge"><BrandIcon icon={siReact} />React Native</span>
-				, and
-				<span class="badge"><BrandIcon icon={siSvelte} />Svelte.</span>
+				<span class="badge"><BrandIcon icon={siSvelte} />Svelte</span>
 			</IconContext>
 		</div>
 		<div class="text-secondary-content/80">
 			I'm currently building <span class="badge font-mono font-bold">Kelma</span>
-			. A fediverse connected content platform that's built around user intent. So instead of click-baits
+			A fediverse connected content platform that's built around user intent. So instead of click-baits
 			and adverstisments, it offers a one-press monetization model that is dead-simple for the viewer
 			and much more sustainable for the content creater.
 		</div>
