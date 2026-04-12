@@ -70,7 +70,7 @@
 				src={`/content/${data.id}/hero.webp`}
 				class="max-h-96 w-full max-w-2xl object-cover"
 			/>
-			<div class="flex gap-2">
+			<div class="flex flex-wrap gap-2">
 				{#each data.tags as tag (tag)}
 					<a href={resolve('/blog/tag/[tag]', { tag })} class="link-hover">#{tag}</a>
 				{/each}
