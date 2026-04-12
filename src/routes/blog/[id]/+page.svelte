@@ -93,7 +93,7 @@
 				<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 				<ul
 					tabindex="0"
-					class="dropdown-content menu z-1 w-52 rounded-box bg-base-100 p-2 shadow-sm"
+					class="dropdown-content menu z-1 w-52 rounded-box bg-base-300 p-2 shadow-sm"
 				>
 					<li>
 						<button
