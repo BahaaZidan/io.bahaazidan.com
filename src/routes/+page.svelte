@@ -17,9 +17,7 @@
 />
 
 <main class="flex flex-col items-center">
-	<div
-		class="relative h-150 w-full bg-[url(/bd764bb25d49a05105060185774ba14cd2c846f7.jpg)] bg-cover bg-center"
-	>
+	<div class="relative h-150 w-full bg-[url(/hero.webp)] bg-cover bg-center">
 		<div class="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-base-100"></div>
 	</div>
 	<div class="relative -top-20 -mb-20 size-40 rounded-full bg-[url(/avatar.jpeg)] bg-contain"></div>
