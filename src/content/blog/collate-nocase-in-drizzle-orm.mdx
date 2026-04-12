@@ -1,0 +1,35 @@
+---
+title: COLLATE NOCASE in drizzle-orm
+description: The simplest way to implement column case sensitivity using Drizzle ORM
+pubDate: '2026-04-12'
+tags: Tip,SQL,Node.js,TypeScript,Drizzle-ORM
+---
+
+While Drizzle ORM doesn't provide a first class API to determine the collation of a column (whether or not it's case sensitive), it can be very easily achieved by making a custom type:
+
+```ts
+import { customType } from 'drizzle-orm/sqlite-core';
+
+const citext = customType<{
+	data: string;
+	notNull: true;
+	default: true;
+	config: { length?: number };
+}>({
+	dataType(config) {
+		return `text${config?.length ? `(${config.length})` : ''} COLLATE NOCASE`;
+	},
+});
+```
+
+The custom type can then be used very simply like any other type when defining your schema:
+
+```ts {4, 6}
+export const users = sqliteTable('users', {
+	id: text().primaryKey(),
+	name: text().notNull(),
+	email: citext().notNull().unique(),
+	image: text(),
+	username: citext().unique().notNull(),
+});
+```
